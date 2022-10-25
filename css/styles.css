@@ -5,11 +5,13 @@
 
 body {
   max-width: 900px;
+  margin: 0px;
 }
 
 header{
   background-color: #00ff7f;
   height: 79px;
+  
 }
 nav{
   display: flex;
@@ -20,12 +22,16 @@ nav{
   font-weight: 400;
   line-height: 22px;
   letter-spacing: 0em;
-  text-align: left; 
+  text-align: center;
+  height: 79px;
 }
 
 a {
   text-decoration: none;
   cursor: pointer;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 79px;  
 }
 
 nav div a{
@@ -154,7 +160,7 @@ section .testimonios{
 }
 
 .testimonio{
-  background-color: rgb(253, 255, 138);
+  /* background-color: rgb(253, 255, 138); */
   display: grid;
   grid-template-columns: 1fr 2fr;
   
@@ -169,7 +175,7 @@ section .testimonios{
 }
 
 .testimonio div h3{
-  background-color: rgb(255, 0, 0);
+  /* background-color: rgb(255, 0, 0); */
   padding: 20px;
  
   margin: 0px;
@@ -185,7 +191,7 @@ section .testimonios{
 
 .beneficios{
   display: grid;
-  background-color: rgb(253, 255, 138);
+  /* background-color: rgb(253, 255, 138); */
 }
 
 section .beneficio{
@@ -297,12 +303,12 @@ footer div img{
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  width: 13px;
-  height: 13px;
+  width: 50px;
+  height: 50px;
 }
-
+/* 
 .twitter {
-  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Twitter-logo.svg/512px-Twitter-logo.svg.png");
+  background-image:  url("https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Twitter-logo.svg/512px-Twitter-logo.svg.png");
 }
 
 .facebook{
@@ -311,4 +317,4 @@ footer div img{
 
 .instagram{
   background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/132px-Instagram_logo_2016.svg.png");
-}
+} */
