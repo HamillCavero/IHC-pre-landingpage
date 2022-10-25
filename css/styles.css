@@ -1,18 +1,26 @@
+:root { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  :root { font-family: 'Inter var', sans-serif; }
+}
+
 body {
-  margin: 0;
-  padding: 0;
-  font-size: 13px;
-  font-family: Arial, Helvetica, sans-serif;
+  max-width: 900px;
 }
 
 header{
-  
   background-color: #00ff7f;
+  height: 79px;
 }
 nav{
   display: flex;
   justify-content: space-between;
-  padding: 1em;
+  padding: 0px;
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left; 
 }
 
 a {
@@ -27,17 +35,74 @@ nav div a{
 .wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 10px;
-  padding: 10%;
+  gap: 16px;
   grid-auto-rows: minmax(100px, auto);
-  
+  padding-bottom: 0px;
 }
+
+.wrapper div{
+  max-width: 390px;
+}
+
 .one {
   background-color: brown;
 }
+section{
+  text-align: center;
+  padding: 5%;
+  padding-bottom: 0px;
+}
+
+section div section{
+  padding: 0px;
+  padding-top: 1%;
+}
+
+
+.one section div{
+  justify-content:   space-evenly;
+  display: flex;
+  grid-template-columns: 1fr 1fr;
+  padding-bottom: 10px;
+}
+
+.one section ul{
+  text-align:  left;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 25px;
+  overflow: hidden;
+  letter-spacing: 0.02em;
+  margin: 0px;
+  margin-left:45px;
+
+  padding-left: 5%;
+}
+.one section ul li{
+  float: left;
+}
+
+.one section div img{
+  max-width: 150px;
+}
+
+section h1{
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-bottom: 10px;
+  margin: 0px;
+  font-family: Inter;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
 .two {
   background-color: red;
-  
 }
 .three {
   background-color: rgb(99, 99, 99);
@@ -45,17 +110,12 @@ nav div a{
 .four {
   background-color: blue;
 }
-.five {
-  background-color: green;
-}
-.six {
-  background-color: pink;
+
+.four section p{
+  top: 50%;
+  left: 50%;
 }
 
-section{
-  text-align: center;
-  padding: 5%;
-}
 
 section div{
   justify-content: space-around;
@@ -69,7 +129,7 @@ section .members{
 
 .member{
   display: grid;
-  /* background-color: rgb(253, 255, 138); */
+  font-size: 14px;;
 }
 .member img {
   width: 100px;
@@ -80,18 +140,40 @@ section .members{
 }
 
 section .testimonios{
+  margin: 0%;
   display: grid;
-
+  padding: 5%;
+  padding-bottom: 0px;
 }
+
+.testimonio p{
+  text-align: justify;
+  line-height: 200%;
+  padding: 5%;
+  margin: 0px;
+}
+
 .testimonio{
-  display: flex;
   background-color: rgb(253, 255, 138);
-}
-
-.testimonio div{
-  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
   
 }
+
+.testimonio div {
+  text-align:  center;
+}
+
+.testimonio div div{
+  padding: 5%;
+}
+
+.testimonio div h3{
+  background-color: rgb(255, 0, 0);
+  padding: 20px;
+ 
+  margin: 0px;
+ }
 
 .testimonio img{
   width: 100px;
@@ -101,26 +183,109 @@ section .testimonios{
   border-radius: 20px;
 }
 
-section .beneficios{
-  display: flex;
-}
-
-.beneficio{
+.beneficios{
   display: grid;
   background-color: rgb(253, 255, 138);
 }
+
+section .beneficio{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 .beneficio img {
-  width: 100px;
-  height: 100px;
-  max-width: 192px;
-  max-height: 100px;
+  width: 350px;
+  height: 400px;
+  max-width: 350px;
+  max-height: 400px;
   border-radius: 20px;
+}
+
+.beneficio ul li{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  list-style-type: none; /* Remove bullets */
+  padding: 10%; /* Remove padding */
+  margin: 0; /* Remove margins */
+}
+
+.button{
+  background-color: #00ff7f;
+  color: beige;
+  border-radius: 20px;
+}
+
+
+.tabla h1{
+  text-align: left;
+}
+table{
+  max-width: 800px;
+  min-width: 350px;
+}
+#Beneficios .tabla table,
+#Beneficios .tabla td,
+#Beneficios .tabla tr{
+  border:none;
+  border-collapse: collapse;
+}
+
+#Beneficios td:nth-child(4),
+#Beneficios th:nth-child(4)
+{
+  background-color: #00ff7f;
+  text-align:  center;
+}
+
+
+td {
+    text-align: left;
+    
+}
+
+
+td img{
+  max-width: 68px;
+  max-height: 68px;
+}
+
+.planes{
+  display: flex;
+}
+.planes .tabla{
+  display: grid;
+  font-size: 50px;;
+}
+
+.planes .tabla table,
+.planes .tabla table td {
+  text-align: center;
+  border-collapse: collapse;
+  border: 1px solid #00ff7f;
+ 
+}
+
+
+.planes .tabla thead,
+.planes .tabla table tfoot {
+    text-align: center;
+    background-color: #00ff7f;
+    color: #fff;
+    
+}
+
+.planes .tabla{
+  padding-bottom: 5%;
 }
 
 footer{
   display: flex;
   justify-content: space-between;
-  padding: 1em;
+  padding: 2%;
   background-color: #00ff7f;
 }
 
@@ -135,6 +300,7 @@ footer div img{
   width: 13px;
   height: 13px;
 }
+
 .twitter {
   background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Twitter-logo.svg/512px-Twitter-logo.svg.png");
 }
