@@ -5,23 +5,16 @@
 
 body {
   max-width: 900px;
-<<<<<<< HEAD
   text-align: center;
   padding-left: 25%;
   padding-right: 25%;
-=======
   margin: 0px;
->>>>>>> 418f0f1b7933e710e78a5bacaa99a3ecf2fdb7e5
 }
 
 header{
   background-color: #B9F29E;
   height: 79px;
-<<<<<<< HEAD
   text-align: center;
-=======
-  
->>>>>>> 418f0f1b7933e710e78a5bacaa99a3ecf2fdb7e5
 }
 nav{
   display: flex;
@@ -200,12 +193,7 @@ section .testimonios{
   font-family: 'Lexend Deca';
 }
 
-<<<<<<< HEAD
 .testimonio1{
-=======
-.testimonio{
-  /* background-color: rgb(253, 255, 138); */
->>>>>>> 418f0f1b7933e710e78a5bacaa99a3ecf2fdb7e5
   display: grid;
   grid-template-columns: 1fr 2fr;
   box-shadow:2px 2px 4px #afafaf;
@@ -219,13 +207,8 @@ section .testimonios{
   font-family: 'Lexend Deca';
 }
 
-<<<<<<< HEAD
 .testimonio1 div h3{
   background-color:#B9F29E;
-=======
-.testimonio div h3{
-  /* background-color: rgb(255, 0, 0); */
->>>>>>> 418f0f1b7933e710e78a5bacaa99a3ecf2fdb7e5
   padding: 20px;
   font-family: 'Lexend Deca';
   margin: 0px;
@@ -278,11 +261,7 @@ section .testimonios{
 }
 .beneficios{
   display: grid;
-<<<<<<< HEAD
   font-family: 'Lexend Deca';
-=======
-  /* background-color: rgb(253, 255, 138); */
->>>>>>> 418f0f1b7933e710e78a5bacaa99a3ecf2fdb7e5
 }
 
 section .beneficio{
